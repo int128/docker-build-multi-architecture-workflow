@@ -5,14 +5,12 @@ on:
     inputs:
       platforms:
         description: platforms (JSON string)
-        required: true
         type: string
         default: |
           - linux/amd64
           - linux/arm64
       suffixes:
         description: image suffixes (multiline string)
-        required: true
         type: string
         default: |
           -linux-amd64
