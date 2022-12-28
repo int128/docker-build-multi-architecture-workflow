@@ -1,0 +1,17 @@
+name: test
+
+on:
+  pull_request:
+    paths:
+      - .github/workflows/test.yaml
+      - .github/workflows/build.yaml
+  push:
+    branches:
+      - v*
+    paths:
+      - .github/workflows/test.yaml
+      - .github/workflows/build.yaml
+
+jobs:
+  build:
+    uses: ./.github/workflows/build.yaml
