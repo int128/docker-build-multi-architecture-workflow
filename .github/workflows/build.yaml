@@ -7,8 +7,7 @@ on:
         description: platforms (JSON string)
         type: string
         default: |
-          - linux/amd64
-          - linux/arm64
+          ["linux/amd64", "linux/arm64"]
       suffixes:
         description: image suffixes (multiline string)
         type: string
