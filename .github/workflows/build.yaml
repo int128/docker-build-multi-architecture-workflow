@@ -16,7 +16,7 @@ on:
           -linux-arm64
 
 jobs:
-  single:
+  for:
     strategy:
       fail-fast: false
       matrix:
@@ -49,9 +49,9 @@ jobs:
           cache-to: ${{ steps.cache.outputs.cache-to }}
           platforms: ${{ matrix.platform }}
 
-  multi:
+  multi-architecture:
     needs:
-      - single
+      - for
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
