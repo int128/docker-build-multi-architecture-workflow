@@ -1,3 +1,7 @@
+Moved to https://github.com/int128/docker-build-workflow.
+
+---
+
 # docker-build-multi-architecture-workflow [![test](https://github.com/int128/docker-build-multi-architecture-workflow/actions/workflows/test.yaml/badge.svg)](https://github.com/int128/docker-build-multi-architecture-workflow/actions/workflows/test.yaml)
 
 This is a reusable workflow for building a multi-architecture container image.
